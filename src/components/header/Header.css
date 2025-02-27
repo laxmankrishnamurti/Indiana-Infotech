@@ -1,0 +1,89 @@
+.header-section-wrap,
+.header-container-wrap,
+.header-content-wrap {
+    width: 100%;
+    height: 80px;
+}
+
+.header-section-wrap {
+    box-shadow: 1px 1px 3px rgb(200, 243, 241);
+}
+
+.header-content-wrap {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* logo  */
+
+.logo-container-wrap {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-container-wrap img {
+    width: 100%;
+}
+
+/* nagivation options */
+
+nav > ul > li {
+    display: inline;
+    margin: 0rem 1rem;
+}
+
+nav > ul > li > a {
+    text-decoration: none;
+    color: #000;
+    transition: all 100ms ease-in-out;
+}
+
+a:hover {
+    color: orangered;
+}
+
+/* header buttons  */
+
+.header-btn-cont {
+    display: flex;
+    gap: 1rem;
+}
+
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.request-btn-container{
+    background-color: rgba(137, 43, 226, 0.795);
+    width: 150px;
+    height: 45px;
+    transition: all 100ms ease-in-out;
+}
+
+.request-btn-container:hover {
+    background-color: blueviolet;
+}
+
+.login-btn-container {
+    background-color: rgba(0, 0, 255, 0.699);
+    width: 100px;
+    height: 45px;
+    transition: all 100ms ease-in-out;
+}
+
+.login-btn-container:hover {
+    background-color: blue;
+}
+
+#head-btn {
+    text-decoration: none;    
+    color: #fff;
+}
