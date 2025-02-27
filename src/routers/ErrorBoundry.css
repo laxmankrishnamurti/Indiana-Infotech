@@ -1,0 +1,19 @@
+.unexpected-error-wrapper {
+    width: 100%;
+    min-height: 50vh;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.unexpected-error-container {
+    font-family: Helvatica Neue;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+}
