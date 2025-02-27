@@ -51,7 +51,7 @@
 
 /* RESPONSIVENESS  */
 
-@media  (max-width: 680px) {
+@media  (max-width: 1000px) {
     .footer-content-wrap {
         display: flex;
         justify-content: space-around;

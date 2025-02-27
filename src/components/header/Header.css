@@ -91,6 +91,7 @@ a:hover {
 
 .menu-icon-wrap {
     display: none;
+    cursor: pointer;
 }
 
 /* responsive navigation options  */
