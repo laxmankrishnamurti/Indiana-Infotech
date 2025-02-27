@@ -3,6 +3,7 @@
 .header-content-wrap {
     width: 100%;
     height: 80px;
+    position: relative;
 }
 
 .header-section-wrap {
@@ -42,7 +43,7 @@ nav > ul > li > a {
 }
 
 a:hover {
-    color: orangered;
+    color: blueviolet;
 }
 
 /* header buttons  */
@@ -86,4 +87,89 @@ a:hover {
 #head-btn {
     text-decoration: none;    
     color: #fff;
+}
+
+.menu-icon-wrap {
+    display: none;
+}
+
+/* responsive navigation options  */
+
+
+.res-nav-wrap {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    top: 5rem;
+    background: linear-gradient(to bottom, blue, black);
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    animation: ResponsiveNavbar alternate 200ms ease-in-out;
+}
+
+.res-nav-container a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    margin: 2rem 0rem;
+    color: #ffffff;
+}
+
+.res-btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.res-btn-container a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    margin: 0.5rem 0rem;
+    color: #ffffff;
+}
+
+#res-req {
+    width: 200px;
+    height: 45px;
+    background-color: rgb(0, 153, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+/* animation  */
+
+@keyframes ResponsiveNavbar {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;        
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* RESPONSIVENESS  */
+
+@media (max-width: 1000px) {
+    .navigation-container-wrap,
+    .header-btn-wrap{
+        display: none;
+    }
+
+    .header-content-wrap {
+        justify-content: space-between;
+        padding: 0rem 1rem;
+    }
+
+    .menu-icon-wrap {
+        display: block;
+    }
 }
