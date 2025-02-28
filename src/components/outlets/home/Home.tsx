@@ -1,8 +1,15 @@
-import React from 'react'
+import { Hero } from "./index.home";
+import "./Home.css";
 
 function Home() {
   return (
-    <div>Home</div>
+    <section className="home-section-wrap">
+      <div className="home-container-wra">
+        <div className="hero-container-wrap">
+          <Hero/>
+        </div>
+      </div>
+    </section>
   )
 }
 

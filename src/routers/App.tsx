@@ -1,6 +1,7 @@
-import { Header, Footer } from "../components/index.components"
-import ErrorBoundary from "./ErrorBoundry"
-import { Outlet } from "react-router-dom"
+import { Header, Footer } from "../components/index.components";
+import ErrorBoundary from "./ErrorBoundry";
+import { Outlet } from "react-router-dom";
+import "./App.css"
 
 function App() {
 
