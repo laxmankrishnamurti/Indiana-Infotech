@@ -108,6 +108,7 @@ a:hover {
     display: flex;
     justify-content: center;
     animation: ResponsiveNavbar alternate 200ms ease-in-out;
+    z-index: 1000;
 }
 
 .res-nav-container a{

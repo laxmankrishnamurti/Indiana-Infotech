@@ -1,0 +1,177 @@
+.hero-container-slider {
+    width: 100%;
+    height: 580px;
+    position: relative;
+    overflow: hidden;
+    margin: 5px 0px;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+/* slide images  */
+
+.slide-image {
+    width: 600px;
+    position: absolute;
+    left: 5%;
+}
+
+.slide-image img {
+    width: 100%;
+}
+
+/* buttons  */
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    padding: 5px;
+    background: transparent;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.arrow {
+    width: 100%;
+    height: 100%;
+}
+
+/* slide content  */
+
+.content {
+    position: absolute;
+    top: 45%;
+    left: 73%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.slide-heading {
+    font-size: 4rem;
+    color: #673CA4;
+}
+
+.slide-subheading {
+    font-size: 1.5rem;
+    color: #E0D2EB;
+}
+
+.slide-para {
+    font-size: 1.1rem;
+    color: #2F3541;
+    font-family: Helvetica, sans-serif;
+}
+
+.slide-link {
+    margin-top: 1rem;
+    width: 220px;
+    height: 50px;
+    padding-inline: 5px;
+    background-color: #673CA4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* Dots container */
+.dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  /* Default dot style */
+  .dot {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: #4D4DFF;
+    border-radius: 50%;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  /* Active dot effect */
+  .dot.active {
+    width: 14px;
+    height: 14px;
+    background-color: #673CA4;
+    transform: scale(1.3);
+  }
+  
+
+/* RESPONSIVENESS  */
+
+@media (max-width: 1300px) {
+    .slide-image {
+        left: 0;
+    }
+}
+
+@media (max-width: 1200px) {
+    .slide-image {
+        width: 500px;
+    }
+}
+
+@media (max-width: 680px) {
+    .hero-container-slider {
+        height: 84vh;
+    }
+
+    .slide-image {
+        width: 350px;
+        left: 10%;
+    }
+
+    .content {
+        top: 68%;
+        left: 50%;
+    }
+
+    .slide-heading {
+        font-size: 2.5rem;
+    }
+
+    .slide-subheading {
+        font-size: 1.1rem;
+    }
+
+    .slide-para{
+        font-size: 1rem;
+    }
+}
