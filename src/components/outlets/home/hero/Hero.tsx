@@ -1,6 +1,7 @@
 import first from "../../../../assets/hero/first.avif";
 import second from "../../../../assets/hero/web_designing.svg";
 import third from "../../../../assets/hero/app_development.avif";
+import four from "../../../../assets/hero/ecommerce.avif"
 
 import next from "../../../../assets/hero/next.png";
 import prev from "../../../../assets/hero/arrow.png";
@@ -24,7 +25,7 @@ const slides = [
     subheading: "Grow your business with amazing design techniques.",
     para: "We create stunning, user-friendly, and responsive websites that engage visitors and drive conversions. Our designs blend creativity with functionality, ensuring smooth navigation and a seamless user experience.",
     ctaText: "🎨 Get a Stunning Website",
-    ctaLink: "/serivice",
+    ctaLink: "/services",
   },
   { id: 3, 
     image: third,
@@ -32,8 +33,17 @@ const slides = [
     subheading: "User friendly UI & UX",
     para: "We develop high-performance mobile and web apps for Android, iOS, and cross-platform needs. Our focus is on intuitive design, smooth performance, and secure architecture to enhance user engagement and business growth.",
     ctaText: "📱 Launch Your App",
-    ctaLink: "/carrer ",
+    ctaLink: "/carrer",
   },
+  { 
+    id: 4, 
+    image: four,
+    heading: "E-Commerce Solutions",
+    subheading: "Scalable & Secure Online Stores",
+    para: "We build high-performance e-commerce websites tailored for businesses. Our solutions ensure seamless shopping experiences, secure payments, and powerful analytics to drive sales and customer engagement.",
+    ctaText: "🛒 Start Selling Online",
+    ctaLink: "/services/ecommerce",
+  },  
 ]
 
 
@@ -69,7 +79,7 @@ function Hero() {
               <h1 className="slide-heading">{slide.heading}</h1>
               <h2 className="slide-subheading">{slide.subheading}</h2>
               <p className="slide-para">{slide.para}</p>
-              <Link to={slide.ctaLink} className="slide-link">{slide.ctaText}</Link>
+              <Link to={`${slide.ctaLink}`} className="slide-link">{slide.ctaText}</Link>
             </div>
           </div>
         ))

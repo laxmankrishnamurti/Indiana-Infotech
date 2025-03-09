@@ -5,6 +5,10 @@
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
+:root {
+  --header-height: 80px; 
+}
+
 html,
 body {
   position: relative;
