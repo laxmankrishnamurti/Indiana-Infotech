@@ -1,10 +1,8 @@
-import "./Hero.css";
+import "./Hero.css"
 
 function Hero() {
   return (
-    <div className="hero-container-wrap">
-      
-    </div>
+    <div>Hero</div>
   )
 }
 
