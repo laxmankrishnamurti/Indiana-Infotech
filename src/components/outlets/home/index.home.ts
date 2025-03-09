@@ -1,3 +1,4 @@
 import Hero from "./hero/Hero";
+import Keys from "./keys/Keys";
 
-export { Hero };
+export { Hero, Keys };

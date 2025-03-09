@@ -1,0 +1,73 @@
+.home-content-wrap {
+    padding: 7% 10% 3% 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+/* comapny intro  */
+
+
+.c-intro-head {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #673CA4;
+}
+
+.c-intro-para {
+    line-height: 1.5;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+/* ready software  */
+
+.r-s-h {
+    text-align: center;
+    color: #673CA4;
+    margin-bottom: 1rem;
+}
+
+.ready-software-container {
+    line-height: 1.5;
+}
+
+.rea-soft.bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+.educare-intro-first {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+/* why section  */
+
+.why-to-choose {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+.wh-to-head {
+    text-align: center;
+    color: #673CA4;
+    margin-bottom: 1rem;
+}
+
+.why-chart-para {
+    display: flex;
+    align-items: center;
+}
+
+.wh-to-para {
+    line-height: 1.5;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+@media (max-width: 1000px) {
+    .why-chart-para {
+        flex-direction: column;
+    }
+}
