@@ -126,9 +126,9 @@ button {
   
   /* Default dot style */
   .dot {
-    width: 10px;
-    height: 10px;
-    margin: 0 5px;
+    width: 8px;
+    height: 8px;
+    margin: 0 3px;
     background-color: #4D4DFF;
     border-radius: 50%;
     transition: transform 0.3s ease, background-color 0.3s ease;
@@ -137,8 +137,8 @@ button {
   
   /* Active dot effect */
   .dot.active {
-    width: 14px;
-    height: 14px;
+    width: 10px;
+    height: 10px;
     background-color: #673CA4;
     transform: scale(1.3);
   }

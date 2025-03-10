@@ -111,7 +111,7 @@ function Home() {
           {/* comapny intro  */}
           <div className="company-intro">
             <div className="c-intro-head">
-              <h2 className="c-intro">Why we are the for your Business Solution !</h2>
+              <h2 className="c-intro">Why we are the best for your Business Solution !</h2>
             </div>
             <div className="c-intro-para">
               Indiana Infotech Pvt. Ltd. is a Software Website ecommerce and Mobile Application Development service provider company in India. Not just a software company but we have gained the faith of customers and positioned
