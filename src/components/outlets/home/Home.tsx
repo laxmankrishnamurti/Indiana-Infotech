@@ -2,102 +2,8 @@ import { Hero, Keys } from "./index.home";
 import "./Home.css";
 
 import why from "../../../assets/home/why_chart.png";
-import student_management from "../../../assets/home/keys/student_management.avif";
-import attendance_tracking from "../../../assets/home/keys/attendance_tracking.avif";
 
-const keys = [
-  {
-    id: 1,
-    position: "left",
-    img: "",
-    head: "Student Management",
-    para: "EducareStudy enables schools to maintain detailed student records, automate admissions, and generate essential documents like ID cards and certificates. This simplifies administrative tasks and ensures all student-related data is readily available."
-  },
-  {
-    id: 2,
-    position: "right",
-    img: "",
-    head: "Attendance Tracking",
-    para: "The system provides real-time attendance tracking using biometrics, RFID, or mobile-based methods. Automated reports help schools monitor student presence effectively, reducing manual efforts."
-  },
-  {
-    id: 3,
-    position: "left",
-    img: "",
-    head: "Fee Management",
-    para: "Schools can streamline fee collection with online payments, automated receipts, and customizable fee structures. EducareStudy also sends reminders for pending payments, minimizing financial discrepancies."
-  },
-  {
-    id: 4,
-    position: "right",
-    img: "",
-    head: "Timetable & Scheduling",
-    para: "Timetable & Scheduling With automated timetable generation, schools can easily schedule classes, allocate rooms, and resolve scheduling conflicts. EducareStudy notifies teachers and students about changes instantly."
-  },
-  {
-    id: 5,
-    position: "left",
-    img: "",
-    head: "Exam & Result Management",
-    para: "The platform supports online and offline examinations, automates result processing, and generates customizable report cards. This reduces manual grading errors and enhances efficiency."
-  },
-  {
-    id: 6,
-    position: "left",
-    img: "",
-    head: "Library Management",
-    para: "Schools can efficiently track book issuance, returns, and overdue fines. Barcode and RFID integration ensures smooth library operations, while digital resources support e-learning."
-  },
-  {
-    id: 7,
-    position: "right",
-    img: "",
-    head: "HR & Payroll",
-    para: "EducareStudy manages staff records, automates payroll processing, and tracks leaves, making HR operations seamless and efficient for school administrators."
-  },
-  {
-    id: 8,
-    position: "left",
-    img: "",
-    head: "Transport Management",
-    para: "Schools can optimize routes, track school buses in real-time using GPS, and monitor driver details, ensuring the safety of students during commutes."
-  },
-  {
-    id: 9,
-    position: "right",
-    img: "",
-    head: "Hostel & Accommodation Management",
-    para: "This feature assists in hostel room allocation, attendance tracking, and meal planning while maintaining hostel fees and expenses, providing a complete accommodation solution."
-  },
-  {
-    id: 10,
-    position: "left",
-    img: "",
-    head: "Parental Engagement",
-    para: "A dedicated portal keeps parents informed about student progress, attendance, and school events through notifications, SMS, and emails, fostering better communication."
-  },
-  {
-    id: 11,
-    position: "right",
-    img: "",
-    head: "E-Learning & Online Classes",
-    para: "EducareStudy integrates virtual classrooms, an LMS for digital content, and tools for assignment submission and grading, making remote learning convenient and interactive."
-  },
-  {
-    id: 12,
-    position: "left",
-    img: "",
-    head: "Analytics",
-    para: "The software provides in-depth reports on academic performance, attendance, and finances. Advanced analytics help schools make data-driven decisions to improve operations."
-  },
-  {
-    id: 13,
-    position: "right",
-    img: "",
-    head: "Security & Data Privacy",
-    para: "EducareStudy ensures secure access with role-based authentication, encrypted data storage, and regular backups, preventing unauthorized access and data loss."
-  },
-]
+import features from "./keyFeatures/keyFeatures";
 
 function Home() {
   return (
@@ -162,8 +68,15 @@ function Home() {
             </div>
           </div>
 
-          <Keys position={"left"} img={student_management} para={keys[0].para}/>
-          <Keys position={"right"} img={attendance_tracking} para={keys[1].para}/>
+          {/* key features   */}
+
+          {
+            features.map((feature) => (
+              <div className="feature key-features-container" key={feature.id}>
+                <Keys position={feature.position} img={feature.img} head={feature.head} headColor={feature.headColor} para={feature.para}/>
+              </div>
+            ))
+          }
         </div>
       </div>
     </section>

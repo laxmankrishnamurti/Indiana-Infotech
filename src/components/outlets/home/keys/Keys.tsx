@@ -1,22 +1,36 @@
 import "./Keys.css"
  
-function Keys({position, img, para}: {position: string ,img: string, para: string}) {
+function Keys({position, img, head, headColor, para}: {position: string ,img: string, head: string, headColor: string , para: string}) {
   return (
-    <div className={`key-para-container ${position === "right" ? "reverse" : ""}`}>
+    <div className={`key-container ${position === "right" ? "reverse" : ""}`}>
         {
             position === "left" ? (
                 <>
-                    <img src={img} alt="logo" />
-                    <div className="key-para">
-                        {para}
+                    <div className="key-img-container">
+                        <img src={img} alt="logo" />
+                    </div>
+                    <div className="key-content">
+                        <div className="key-head" style={{color: headColor}} >
+                            <span>{head}</span>
+                        </div>
+                        <div className="key-para">
+                            <p>{para}</p>
+                        </div>
                     </div>
                 </>
             ) : (
                 <>
-                    <div className="key-para">
-                    {para}
+                    <div className="key-content">
+                        <div className="key-head" style={{color: headColor}}>
+                            <span>{head}</span>
+                        </div>
+                        <div className="key-para">
+                            <p>{para}</p>
+                        </div>
                     </div>
-                    <img src={img} alt="logo" />
+                    <div className="key-img-container">
+                        <img src={img} alt="logo" />
+                    </div>
                 </>
             )
         }
