@@ -71,16 +71,16 @@
     }
 
     .key-img-container{
-        width: 90%;
+        width: 98%;
     }
 
     .key-content {
-        width: 90%;
+        width: 98%;
         gap: 1.5rem;
     }
 
     .key-head span{
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     
     .key-para p {

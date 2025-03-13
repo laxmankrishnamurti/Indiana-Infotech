@@ -1,0 +1,36 @@
+.about-sec-wrap {
+    margin: 1% 8%;
+}
+
+.about {
+    margin-bottom: 1rem;    
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.head-container {
+    display: flex;
+    gap: 8px;
+}
+
+.head {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    color: #FF914D;
+}
+
+.ab-log {
+    width: 25px;
+}
+
+.para p{
+    line-height: 1.7;
+    font-family: "Poppins", sans-serif;
+}
+
+@media (max-width: 680px) {
+    .about-sec-wrap {
+        margin: 2% 3%;
+    }
+}
