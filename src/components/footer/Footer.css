@@ -4,6 +4,18 @@
     height: 100%;
 }
 
+.back-to-top a{
+    background-color: #34506C;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    text-decoration: none;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+}
+
 .footer-content-wrap {
     display: flex;
     justify-content: space-around;

@@ -11,6 +11,9 @@ import appstore from "../../assets/icons/app-store.png";
 function Footer() {
   return (
     <section className="footer-section-wrap">
+      <div className="back-to-top">
+        <a href="#home">Back to top</a>
+      </div>
       <footer className="footer-content-wrap">
 
         {/* copyright  */}

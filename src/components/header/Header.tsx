@@ -17,7 +17,7 @@ function Header() {
   }
 
   return (
-    <section className="header-section-wrap">
+    <section className="header-section-wrap" id="home">
       <header className="header-container-wrap">
         <div className="header-content-wrap">
 
