@@ -1,0 +1,40 @@
+.service-wrapper {
+    width: 32%;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.s-h {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    color: #fff;
+}
+
+
+.service-children {
+    padding-left: 1rem;
+}
+
+.li-child  {
+    font-family: "Poppins", sans-serif;
+    font-weight: 00;
+    list-style-type: circle;
+}
+
+/* RESPONSIVENESS */
+
+@media (max-width: 1200px) {
+    .service-wrapper {
+        width: 46%;
+        padding: 1rem;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 680px) {
+    .service-wrapper {
+        width: 98%;
+        padding: 1rem;
+        border-radius: 10px;
+    }
+}
