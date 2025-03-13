@@ -1,9 +1,8 @@
-import React from 'react'
 
 function Carrer() {
   return (
     <div className='carrer-container'>
-            asdf
+        <h1>Carrer</h1>
     </div>
   )
 }
