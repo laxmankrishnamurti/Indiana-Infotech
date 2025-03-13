@@ -1,0 +1,12 @@
+.carrer-wrapper {
+    margin: 2% 8%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+@media (max-width: 1000px) {
+    .carrer-wrapper {
+        margin: 2% 4%;
+    }
+}
