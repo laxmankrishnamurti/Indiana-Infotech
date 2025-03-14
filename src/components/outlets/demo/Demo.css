@@ -1,0 +1,57 @@
+.request-demo-container {
+    margin: 2% 8% 5% 8%;
+}
+
+.request-form-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.text-area-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#comment {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+}
+
+#comment:focus {
+    border: 1px #000 dotted;
+}
+
+
+.submit-btn-container button {
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 5px;
+    width: 200px;
+    height: 45px;
+    background: linear-gradient(90deg, #FF914D, #34506C);
+    transition: all .2s ease-in-out;
+}
+
+.submit-btn-container button:hover{
+    border-radius: 30px;
+}
+
+@media (max-width: 680px) {
+    .request-demo-container {
+        margin: 2% 5% 5% 5%;
+    }    
+
+    .text-area-container {
+        width: 98%;
+    }
+    
+}

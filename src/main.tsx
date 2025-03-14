@@ -8,7 +8,7 @@ import ErrorBoundary from './routers/ErrorBoundry';
 import { createBrowserRouter, createRoutesFromElements, RouterProvider, Route } from 'react-router-dom';
 
 import { NotFound } from './components/index.components';
-import { Home, About, Services, Carrers} from './components/outlets/index.outlets';
+import { Home, About, Services, Carrers, Demo} from './components/outlets/index.outlets';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -17,6 +17,7 @@ const router = createBrowserRouter(
       <Route path='/about' element={<About/>}/>
       <Route path='/services' element={<Services/>}/>
       <Route path='/carrer' element={<Carrers/>}/>
+      <Route path='/request-a-demo' element={<Demo/>}/>
       <Route path='*' element={<NotFound/>}/>
     </Route>
   )
