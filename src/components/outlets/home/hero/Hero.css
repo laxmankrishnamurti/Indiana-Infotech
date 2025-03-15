@@ -129,7 +129,8 @@ button {
     width: 8px;
     height: 8px;
     margin: 0 3px;
-    background-color: #4D4DFF;
+    background-color: transparent;
+    border: 1px solid #adadad;
     border-radius: 50%;
     transition: transform 0.3s ease, background-color 0.3s ease;
     cursor: pointer;
@@ -140,6 +141,8 @@ button {
     width: 10px;
     height: 10px;
     background-color: #673CA4;
+    border: 1px solid #adadad;
+    
     transform: scale(1.3);
   }
   
