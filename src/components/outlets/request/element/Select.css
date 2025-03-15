@@ -18,11 +18,19 @@
     font-weight: 400;
     border-radius: 5px;
     border-width: 1px;
+    cursor: pointer;
 }
 
 .selection-container select option {
     font-family: "Poppins", sans-serif;
     font-weight: 300;
+}
+
+@media (max-width: 1000px) {
+    .selection-container {
+        width: 48%;
+        height: 50px;
+    }    
 }
 
 @media (max-width: 680px) {
