@@ -1,0 +1,121 @@
+.login-wrap {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(#A0C9FF, #447DC4);
+    position: relative;
+}
+
+.login-container {
+    width: 400px;
+    padding: 1rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.user-logo-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#login-text {
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 5px;
+    color: #fff;
+}
+
+.user-img-container {
+    width: 50px;
+}
+.user-logo-container img {
+    width: 100%;
+}
+
+.login-form-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.input-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-container input {
+    font-family: "Poppins", sans-serif;
+    height: 40px;
+    border: none;
+    border-bottom: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+    outline: none;
+    font-size: 1rem;
+}
+
+.input-container label {
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    font-size: 1rem;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+.input-container input:focus + label,
+.input-container input:valid + label {
+    bottom: 35px;
+    font-size: 0.8rem;
+    color: #fff;
+}
+
+.password-container {
+    position: relative;
+}
+
+.password-container .toggle-password {
+    right: 10px;
+    color: #fff;
+}
+
+.log-btn-container {
+    margin: 10% 0%;
+    position: relative;
+}
+
+.log-btn-container button {
+    width: 100%;
+    height: 45px;
+    background: linear-gradient(90deg, #003980, #215AA1);
+    position: absolute;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: all .2s ease-in-out;
+}
+
+.log-btn-container button:hover {
+    border-radius: 20px;
+}
+
+#forgot-pass {
+    text-decoration: none;
+    color: #fff;
+    align-self: flex-end;
+    transition: all .2s ease-in-out;
+}
+
+#forgot-pass:hover{
+    color: #003980;
+}

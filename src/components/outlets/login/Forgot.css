@@ -1,0 +1,42 @@
+.forgot-password-container {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#A0C9FF, #447DC4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reset-form-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.input-container input {
+    font-family: "Poppins", sans-serif;
+    height: 40px;
+    border: none;
+    border-bottom: 2px solid #fff;
+    background: transparent;
+    color: #dfd3d3;
+    outline: none;
+    font-size: 1rem;
+}
+
+.input-container label {
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    font-size: 1rem;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+.input-container input:focus + label,
+.input-container input:valid + label {
+    bottom: 35px;
+    font-size: 0.8rem;
+    color: #fff;
+}
