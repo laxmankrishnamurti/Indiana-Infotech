@@ -149,6 +149,20 @@ button {
 
 /* RESPONSIVENESS  */
 
+@media (min-width: 1350px) {
+    .slide-image {
+        width: 800px;
+    }
+
+    .content {
+        width: 70%;
+    }
+
+    .slide-heading {
+        font-size: 5rem;
+    } 
+}
+
 @media (max-width: 1300px) {
     .slide-image {
         left: 0;
